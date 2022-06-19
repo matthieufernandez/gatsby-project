@@ -42,6 +42,18 @@ export const query = graphql`
           slug
           stack
           title
+          thumb {
+            id
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+          featured {
+            id
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
         id
       }

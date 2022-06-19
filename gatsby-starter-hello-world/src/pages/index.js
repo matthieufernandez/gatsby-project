@@ -20,12 +20,6 @@ export default function Home({ data }) {
           </Link>
         </div>
         <GatsbyImage className={img} image={image} alt="banner" />
-        {/* <img
-          className={img}
-          style={{ maxWidth: "90%" }}
-          // src="/meprofessional.jpeg"
-          alt="banner of me and my cat sushis"
-        /> */}
       </section>
     </Layout>
   )
