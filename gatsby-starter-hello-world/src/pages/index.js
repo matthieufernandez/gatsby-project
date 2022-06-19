@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
-import React from "react"
+import { graphql, Link } from "gatsby"
+import React, { useEffect } from "react"
 import Layout from "../components/Layout"
 import { header, btn, img } from "../styles/home.module.css"
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <Layout>
       <section className={header}>
@@ -12,13 +12,14 @@ export default function Home() {
           <h3>Develop & Deploy</h3>
           <p>Web Developer based in Montréal</p>
           <Link className={btn} to="/projects">
-            Visit My Projects
+            View My Projects
           </Link>
         </div>
         <img
           className={img}
+          style={{ maxWidth: "90%" }}
           src="/meprofessional.jpeg"
-          alt="banner picture of me and my cat sushis"
+          alt="banner of me and my cat sushis"
         />
       </section>
     </Layout>
