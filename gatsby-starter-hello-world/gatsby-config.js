@@ -8,11 +8,14 @@ module.exports = {
   /* Your site config here */
   plugins: [
     "gatsby-transformer-remark",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `notes`,
-        path: `${__dirname}/src/notes/`,
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
@@ -27,5 +30,6 @@ module.exports = {
     title: "Matt's Portfolio",
     description: "web dev portfolio",
     copyright: "matthieu fernandez @ 2022",
+    contact: "mrmatthieufernandez@gmail.com",
   },
 }
