@@ -5,7 +5,6 @@ import { header, btn, img } from "../styles/home.module.css"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function Home({ data }) {
-  console.log(data)
   const image = getImage(data.file.childImageSharp.gatsbyImageData)
 
   return (

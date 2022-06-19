@@ -2,6 +2,7 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
 import { portfolio, projects } from "../../styles/projects.module.css"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function index({ data }) {
   const projectInfo = data.allMarkdownRemark.nodes
@@ -20,7 +21,16 @@ export default function index({ data }) {
                 to={`/projects/${project.frontmatter.slug}`}
               >
                 <div>
-                  <h4>{project.frontmatter.title}</h4>
+                  <GatsbyImage
+                    style={{ borderRadius: "5px" }}
+                    alt="project thumbnail"
+                    image={getImage(
+                      project.frontmatter.thumb.childImageSharp.gatsbyImageData
+                    )}
+                  />
+                  <h4 style={{ paddingTop: "10px" }}>
+                    {project.frontmatter.title}
+                  </h4>
                   <p>{project.frontmatter.stack}</p>
                 </div>
               </Link>
@@ -45,13 +55,21 @@ export const query = graphql`
           thumb {
             id
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                formats: WEBP
+                layout: FULL_WIDTH
+                placeholder: BLURRED
+              )
             }
           }
           featured {
             id
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                layout: FULL_WIDTH
+                placeholder: BLURRED
+                formats: WEBP
+              )
             }
           }
         }
