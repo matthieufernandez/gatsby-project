@@ -10,8 +10,7 @@ export default function index({ data }) {
   return (
     <Layout>
       <div className={portfolio}>
-        <h2>These are the projects I've worked on.</h2>
-        <h3>Feel free to browse</h3>
+        <h2>Some of the projects I've completed this year.</h2>
 
         <div className={projects}>
           {projectInfo.map(project => {

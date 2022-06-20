@@ -12,6 +12,13 @@
   }
 .html {
     margin-top: 40px;
+    padding: 100px;
+    
+    
+  }
+  .html a {
+    text-decoration: underline;
+    
   }
 .featured {
     margin-bottom: 40px;

@@ -4,40 +4,19 @@ import Layout from "../components/Layout"
 export default function about() {
   return (
     <Layout>
-      <div>
-        <h1>About Page</h1>
+      <div style={{ padding: "150px" }}>
+        <h1>About Me</h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Hi, I'm Matt and I'm a nascent web developer! Ever since I was a young
+          boy I've loved computers and I'm hoping to take my skills to the next
+          level by applying them to web development. This is the second time
+          I've changed careers, after working as a Customer Success Manager and
+          a teacher of both French and English. I love movies, literature, and
+          philosophy, but none more than I love people. As such, I've learned
+          strong leadership and team-building skills over the years, and I love
+          to keep everyone around me happy and engaged. If that sounds like
+          someone you'd want on your team, don't hesitate to reach out to me;
+          I'd love to hear from you.
         </p>
       </div>
     </Layout>
