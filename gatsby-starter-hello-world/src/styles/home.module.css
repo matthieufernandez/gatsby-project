@@ -4,8 +4,6 @@
     grid-gap: 40px;
     align-items: center;
     margin-left: 100px;
-
-
   }
   .header h2 {
     font-size: 4em;
@@ -23,7 +21,6 @@
     margin-top: 20px;
     font-weight: 500;
   }
-
   .img {
     border-radius: 50%;
     margin-right: 70px;
