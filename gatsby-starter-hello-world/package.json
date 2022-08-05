@@ -16,6 +16,7 @@
   "dependencies": {
     "gatsby": "^4.16.0",
     "gatsby-plugin-image": "^2.16.1",
+    "gatsby-plugin-remote-images": "^3.4.0",
     "gatsby-plugin-sharp": "^4.16.1",
     "gatsby-source-filesystem": "^4.16.0",
     "gatsby-transformer-remark": "^5.16.0",
